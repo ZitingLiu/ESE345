@@ -1,0 +1,69 @@
+<config>
+    <version>
+        3.1
+    </version>
+    <comment>
+    </comment>
+    <databases>
+        <database id="">*virtual*</database>
+        <database id="9cb6d0611423d3bdc15fb6b32d0c1d00">completeVerify.asdb</database>
+    </databases>
+    <signallists>
+        <signallist id="0">
+        <signal>/iB_tb/clk</signal>
+        <signal>/iB_tb/write_en</signal>
+        <signal>/iB_tb/index</signal>
+        <signal>/iB_tb/inst</signal>
+        <signal>/iB_tb/inst_out</signal>
+        <signal>/iB_tb/RdWrite</signal>
+        <signal>/iB_tb/data_1</signal>
+        <signal>/iB_tb/data_2</signal>
+        <signal>/iB_tb/data_3</signal>
+        <signal>/iB_tb/RdData</signal>
+        <signal>/iB_tb/Rd_Addr</signal>
+        <signal>/iB_tb/opCode</signal>
+        <signal>/iB_tb/Imm</signal>
+        <signal>/iB_tb/load_index</signal>
+        <signal>/iB_tb/data_out</signal>
+        <signal>/iB_tb/wrAddr</signal>
+        <signal>/iB_tb/Data1_Addr</signal>
+        <signal>/iB_tb/Data2_Addr</signal>
+        <signal>/iB_tb/Data3_Addr</signal>
+        <signal>/iB_tb/m1</signal>
+        <signal>/iB_tb/m2</signal>
+        <signal>/iB_tb/m3</signal>
+        <signal>/iB_tb/m4</signal>
+        <signal>/iB_tb/Fwd_data</signal>
+        <signal>/iB_tb/period_1</signal>
+        <signal>/iB_tb/period_2</signal>
+        <signal>/iB_tb/period_3</signal>
+        </signallist>
+    </signallists>
+    <timebases>
+        <timebase id="0">
+            <time start_time="2243755" end_time="2394467" />
+        </timebase>
+    </timebases>
+    <prefbases>
+        <prefbase id="0" >
+        </prefbase>
+    </prefbases>
+    <bookmarkbases>
+        <bookmarks id="0">
+        </bookmarks>
+    </bookmarkbases>
+    <cursorbases>
+        <cursors id="0">
+            <cursor value="2283375" label="Cursor 1" locked="0" />
+        </cursors>
+    </cursorbases>
+    <measurementbases>
+    </measurementbases>
+    <commentbases>
+        <comments id="0">
+        </comments>
+    </commentbases>
+    <views>
+        <view signallist="0" propertybase="0" prefbase="-1" type="1" bookmarks="0" cursors="0" measurements="-1" comments="-1" />
+    </views>
+</config>

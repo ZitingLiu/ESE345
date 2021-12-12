@@ -1,0 +1,16 @@
+242
+~E 1 "../src/decoder_tb.vhd" 33 decoder_tb
+~A 1 "../src/decoder_tb.vhd" 38 tb
+~E 1 "../src/exe_tb.vhd" 31 exe_tb
+~E 1 "../src/executeAlu.vhd" 29 executeAlu
+~A 1 "../src/executeAlu.vhd" 59 behavioral
+~E 1 "../src/fD.vhd" 28 fD
+~A 1 "../src/fD.vhd" 46 behavioral
+~E 1 "../src/iB_tb.vhd" 24 iB_tb
+~A 1 "../src/iB_tb.vhd" 29 tb
+~E 1 "../src/instBuffer.vhd" 24 instBuffer
+~A 1 "../src/instBuffer.vhd" 36 behavioral
+~E 1 "../src/instDecode.vhd" 29 instDecode
+~A 1 "../src/instDecode.vhd" 55 behavioral
+~E 1 "../compile/Pipe.vhd" 27 Pipe
+~E 1 "../compile/RISC.vhd" 27 RISC

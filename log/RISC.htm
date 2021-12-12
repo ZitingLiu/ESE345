@@ -1,0 +1,151 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+
+<!----------------------------------------------------------------------------->
+<!--                          BEGIN HTML HEAD                                -->
+<!--                                                                         -->
+
+<HEAD>
+<TITLE>DRC Report File - RISC.bde</TITLE>
+<STYLE>
+* {font-family: sans-serif;}
+.Err	{color:#FF0000;cursor:hand;text-decoration:underline;}
+.Warn	{color:#0000FF;cursor:hand;text-decoration:underline;}
+.Info	{color:#000000;cursor:hand;text-decoration:underline;}
+.Sccss  {color:#009600;cursor:hand;text-decoration:underline;}
+.ErrH	{color:#FF0000;cursor:hand;text-decoration:underline;}
+.WarnH	{color:#0000FF;cursor:hand;text-decoration:underline;}
+.InfoH	{color:#000000;cursor:hand;text-decoration:underline;}
+.Err1	{color:#FF0000;}
+.Warn1	{color:#0000FF;}
+.Info1	{color:#000000;}
+.Sccss1 {color:#009600;}
+</STYLE>
+</HEAD>
+<BODY BGCOLOR="white" TEXT="black" LINK="blue" VLINK="purple" style="background-image:url(file:///C:/Aldec/Active-HDL-Student-Edition/Flows/Res/default.bmp); background-repeat: repeat;">
+<tt>
+<!--                                                                         -->
+<!--                             END HEADER                                  -->
+<!----------------------------------------------------------------------------->
+
+<!----------------------------------------------------------------------------->
+<!--                            BEGIN VBSCRIPT                               -->
+<!--                                                                         -->
+<SCRIPT LANGUAGE=JSCRIPT>
+	function RollOn() {
+		switch(window.event.srcElement.className) {
+			case 'Err':
+				window.event.srcElement.className = 'ErrH'; break;
+			case 'Warn':
+				window.event.srcElement.className = 'WarnH'; break;
+			case 'Info':
+				window.event.srcElement.className = 'InfoH'; break;
+		}
+	}
+	function RollOff() {
+		switch(window.event.srcElement.className) {
+			case 'ErrH':
+				window.event.srcElement.className = 'Err'; break;
+			case 'WarnH':
+				window.event.srcElement.className = 'Warn'; break;
+			case 'InfoH':
+				window.event.srcElement.className = 'Info'; break;
+		}
+	}
+	function OnError(sMsg,sUrl,sLine) {
+		return true;
+	}
+	
+	document.onmouseover = RollOn;
+	document.onmouseout = RollOff;
+	window.onerror = OnError;
+</SCRIPT>
+
+<SCRIPT LANGUAGE=VBSCRIPT>
+
+Function IID_IDispatch
+	IID_IDispatch = "{00020400-0000-0000-C000-000000000046}"
+End Function
+
+Function CLSID_Executor
+	CLSID_Executor = "Aldec.ExePlugIn.Generic.7"
+End Function
+
+
+Sub OpenPlugIn (progid, template, document, element, string)
+
+	Dim executor, command
+
+	Set executor = window.external.aldec.connector.OpenPlugIn(CLSID_Executor, IID_IDispatch)
+
+	command = "?Activate[<"+progid+">][<"+template+">][<"+document+">][<"+element+">][<"+string+">]"
+
+	executor.ExecuteCommand command, ""
+
+End Sub
+
+
+</SCRIPT>
+<!--                                                                         -->
+<!--                             END VBSCRIPT                                -->
+<!----------------------------------------------------------------------------->
+
+<H2>DRC Report File - RISC.bde</H2>
+
+Created on Fri 2020-11-27 at 21:55:33
+<hr style="height:2px;border-width:0;color:#008080;background-color:#008080">
+<SPAN class=Info1>Checking file 'C:/Users/liuzi/Desktop/2020f/345/project/pipelined/src/RISC.bde'.</SPAN><BR>
+<SPAN class=Info1>
+	<p class = Warn1 style=font-weight:bold;margin-top:0px;margin-bottom:0px>Symbols with contents differences
+	</p><ul style=margin-left:30px;margin-top:0px;margin-bottom:0px>
+	<li ;text-align:left><a class = Warn onclick=OpenPlugin('Aldec.BDE.7','0','C:/Users/liuzi/Desktop/2020f/345/project/pipelined/src/RISC.bde','','-errorid=30');>	<a href=file://C:/Users/liuzi/Desktop/2020f/345/project/pipelined/log/RISC_executeAlu_diff.html>Symbol 'executeAlu' from library 'pipelined'</a></a></li>
+	<li ;text-align:left><a class = Warn onclick=OpenPlugin('Aldec.BDE.7','0','C:/Users/liuzi/Desktop/2020f/345/project/pipelined/src/RISC.bde','','-errorid=33');>	<a href=file://C:/Users/liuzi/Desktop/2020f/345/project/pipelined/log/RISC_fD_diff.html>Symbol 'fD' from library 'pipelined'</a></a></li></ul></SPAN><BR>
+<SPAN class=Info1>
+	<p class = Warn1 style=font-weight:bold;margin-top:0px;margin-bottom:0px>Incompatible range in mapping of nets
+	</p><ul style=margin-left:30px;margin-top:0px;margin-bottom:0px>
+	<li ;text-align:left><a class = Warn onclick=OpenPlugin('Aldec.BDE.7','0','C:/Users/liuzi/Desktop/2020f/345/project/pipelined/src/RISC.bde','','-errorid=30,285');>	'EXE' instance: 'RdAddr(4:0)' input bus pin and 'NET285' wire signal</a></li>
+	<li ;text-align:left><a class = Warn onclick=OpenPlugin('Aldec.BDE.7','0','C:/Users/liuzi/Desktop/2020f/345/project/pipelined/src/RISC.bde','','-errorid=30,374');>	'EXE' instance: 'constIn(4:0)' input bus pin and 'NET373' wire signal</a></li>
+	<li ;text-align:left><a class = Warn onclick=OpenPlugin('Aldec.BDE.7','0','C:/Users/liuzi/Desktop/2020f/345/project/pipelined/src/RISC.bde','','-errorid=30,225');>	'EXE' instance: 'data_in_1(127:0)' input bus pin and 'NET225' wire signal</a></li>
+	<li ;text-align:left><a class = Warn onclick=OpenPlugin('Aldec.BDE.7','0','C:/Users/liuzi/Desktop/2020f/345/project/pipelined/src/RISC.bde','','-errorid=30,233');>	'EXE' instance: 'data_in_2(127:0)' input bus pin and 'NET233' wire signal</a></li>
+	<li ;text-align:left><a class = Warn onclick=OpenPlugin('Aldec.BDE.7','0','C:/Users/liuzi/Desktop/2020f/345/project/pipelined/src/RISC.bde','','-errorid=30,241');>	'EXE' instance: 'data_in_3(127:0)' input bus pin and 'NET241' wire signal</a></li>
+	<li ;text-align:left><a class = Warn onclick=OpenPlugin('Aldec.BDE.7','0','C:/Users/liuzi/Desktop/2020f/345/project/pipelined/src/RISC.bde','','-errorid=30,120');>	'EXE' instance: 'data_out(127:0)' output bus pin and 'NET120' wire signal</a></li>
+	<li ;text-align:left><a class = Warn onclick=OpenPlugin('Aldec.BDE.7','0','C:/Users/liuzi/Desktop/2020f/345/project/pipelined/src/RISC.bde','','-errorid=30,106');>	'EXE' instance: 'forward(127:0)' input bus pin and 'NET106' wire signal</a></li>
+	<li ;text-align:left><a class = Warn onclick=OpenPlugin('Aldec.BDE.7','0','C:/Users/liuzi/Desktop/2020f/345/project/pipelined/src/RISC.bde','','-errorid=30,301');>	'EXE' instance: 'imm(15:0)' input bus pin and 'NET301' wire signal</a></li>
+	<li ;text-align:left><a class = Warn onclick=OpenPlugin('Aldec.BDE.7','0','C:/Users/liuzi/Desktop/2020f/345/project/pipelined/src/RISC.bde','','-errorid=30,309');>	'EXE' instance: 'index(2:0)' input bus pin and 'NET309' wire signal</a></li>
+	<li ;text-align:left><a class = Warn onclick=OpenPlugin('Aldec.BDE.7','0','C:/Users/liuzi/Desktop/2020f/345/project/pipelined/src/RISC.bde','','-errorid=30,293');>	'EXE' instance: 'op_code_in(4:0)' input bus pin and 'NET293' wire signal</a></li>
+	<li ;text-align:left><a class = Warn onclick=OpenPlugin('Aldec.BDE.7','0','C:/Users/liuzi/Desktop/2020f/345/project/pipelined/src/RISC.bde','','-errorid=30,249');>	'EXE' instance: 'rd(127:0)' input bus pin and 'NET249' wire signal</a></li>
+	<li ;text-align:left><a class = Warn onclick=OpenPlugin('Aldec.BDE.7','0','C:/Users/liuzi/Desktop/2020f/345/project/pipelined/src/RISC.bde','','-errorid=30,609');>	'EXE' instance: 'wrAddr(4:0)' output bus pin and 'NET609' wire signal</a></li>
+	<li ;text-align:left><a class = Warn onclick=OpenPlugin('Aldec.BDE.7','0','C:/Users/liuzi/Desktop/2020f/345/project/pipelined/src/RISC.bde','','-errorid=33,120');>	'FORWARD' instance: 'data_in(127:0)' input bus pin and 'NET120' wire signal</a></li>
+	<li ;text-align:left><a class = Warn onclick=OpenPlugin('Aldec.BDE.7','0','C:/Users/liuzi/Desktop/2020f/345/project/pipelined/src/RISC.bde','','-errorid=33,106');>	'FORWARD' instance: 'data_out(127:0)' output bus pin and 'NET106' wire signal</a></li>
+	<li ;text-align:left><a class = Warn onclick=OpenPlugin('Aldec.BDE.7','0','C:/Users/liuzi/Desktop/2020f/345/project/pipelined/src/RISC.bde','','-errorid=33,609');>	'FORWARD' instance: 'rd(4:0)' input bus pin and 'NET609' wire signal</a></li>
+	<li ;text-align:left><a class = Warn onclick=OpenPlugin('Aldec.BDE.7','0','C:/Users/liuzi/Desktop/2020f/345/project/pipelined/src/RISC.bde','','-errorid=33,375');>	'FORWARD' instance: 'rs1(4:0)' input bus pin and 'NET373' wire signal</a></li>
+	<li ;text-align:left><a class = Warn onclick=OpenPlugin('Aldec.BDE.7','0','C:/Users/liuzi/Desktop/2020f/345/project/pipelined/src/RISC.bde','','-errorid=33,374');>	'FORWARD' instance: 'rs2(4:0)' input bus pin and 'NET373' wire signal</a></li>
+	<li ;text-align:left><a class = Warn onclick=OpenPlugin('Aldec.BDE.7','0','C:/Users/liuzi/Desktop/2020f/345/project/pipelined/src/RISC.bde','','-errorid=33,341');>	'FORWARD' instance: 'rs3(4:0)' input bus pin and 'NET341' wire signal</a></li>
+	<li ;text-align:left><a class = Warn onclick=OpenPlugin('Aldec.BDE.7','0','C:/Users/liuzi/Desktop/2020f/345/project/pipelined/src/RISC.bde','','-errorid=165,365');>	'I_D' instance: 'instruction(24:0)' input bus pin and 'NET365' wire signal</a></li>
+	<li ;text-align:left><a class = Warn onclick=OpenPlugin('Aldec.BDE.7','0','C:/Users/liuzi/Desktop/2020f/345/project/pipelined/src/RISC.bde','','-errorid=165,301');>	'I_D' instance: 'loadImm(15:0)' output bus pin and 'NET301' wire signal</a></li>
+	<li ;text-align:left><a class = Warn onclick=OpenPlugin('Aldec.BDE.7','0','C:/Users/liuzi/Desktop/2020f/345/project/pipelined/src/RISC.bde','','-errorid=165,309');>	'I_D' instance: 'loadIndex(2:0)' output bus pin and 'NET309' wire signal</a></li>
+	<li ;text-align:left><a class = Warn onclick=OpenPlugin('Aldec.BDE.7','0','C:/Users/liuzi/Desktop/2020f/345/project/pipelined/src/RISC.bde','','-errorid=165,293');>	'I_D' instance: 'opcode(4:0)' output bus pin and 'NET293' wire signal</a></li>
+	<li ;text-align:left><a class = Warn onclick=OpenPlugin('Aldec.BDE.7','0','C:/Users/liuzi/Desktop/2020f/345/project/pipelined/src/RISC.bde','','-errorid=165,249');>	'I_D' instance: 'rd_data(127:0)' output bus pin and 'NET249' wire signal</a></li>
+	<li ;text-align:left><a class = Warn onclick=OpenPlugin('Aldec.BDE.7','0','C:/Users/liuzi/Desktop/2020f/345/project/pipelined/src/RISC.bde','','-errorid=165,375');>	'I_D' instance: 'regRead1_addr(4:0)' output bus pin and 'NET373' wire signal</a></li>
+	<li ;text-align:left><a class = Warn onclick=OpenPlugin('Aldec.BDE.7','0','C:/Users/liuzi/Desktop/2020f/345/project/pipelined/src/RISC.bde','','-errorid=165,225');>	'I_D' instance: 'regRead1_data(127:0)' output bus pin and 'NET225' wire signal</a></li>
+	<li ;text-align:left><a class = Warn onclick=OpenPlugin('Aldec.BDE.7','0','C:/Users/liuzi/Desktop/2020f/345/project/pipelined/src/RISC.bde','','-errorid=165,374');>	'I_D' instance: 'regRead2_addr(4:0)' output bus pin and 'NET373' wire signal</a></li>
+	<li ;text-align:left><a class = Warn onclick=OpenPlugin('Aldec.BDE.7','0','C:/Users/liuzi/Desktop/2020f/345/project/pipelined/src/RISC.bde','','-errorid=165,233');>	'I_D' instance: 'regRead2_data(127:0)' output bus pin and 'NET233' wire signal</a></li>
+	<li ;text-align:left><a class = Warn onclick=OpenPlugin('Aldec.BDE.7','0','C:/Users/liuzi/Desktop/2020f/345/project/pipelined/src/RISC.bde','','-errorid=165,341');>	'I_D' instance: 'regRead3_addr(4:0)' output bus pin and 'NET341' wire signal</a></li>
+	<li ;text-align:left><a class = Warn onclick=OpenPlugin('Aldec.BDE.7','0','C:/Users/liuzi/Desktop/2020f/345/project/pipelined/src/RISC.bde','','-errorid=165,241');>	'I_D' instance: 'regRead3_data(127:0)' output bus pin and 'NET241' wire signal</a></li>
+	<li ;text-align:left><a class = Warn onclick=OpenPlugin('Aldec.BDE.7','0','C:/Users/liuzi/Desktop/2020f/345/project/pipelined/src/RISC.bde','','-errorid=165,609');>	'I_D' instance: 'regWrite_addr(4:0)' input bus pin and 'NET609' wire signal</a></li>
+	<li ;text-align:left><a class = Warn onclick=OpenPlugin('Aldec.BDE.7','0','C:/Users/liuzi/Desktop/2020f/345/project/pipelined/src/RISC.bde','','-errorid=165,285');>	'I_D' instance: 'regWrite_addr_out(4:0)' output bus pin and 'NET285' wire signal</a></li>
+	<li ;text-align:left><a class = Warn onclick=OpenPlugin('Aldec.BDE.7','0','C:/Users/liuzi/Desktop/2020f/345/project/pipelined/src/RISC.bde','','-errorid=165,120');>	'I_D' instance: 'regWrite_data(127:0)' input bus pin and 'NET120' wire signal</a></li>
+	<li ;text-align:left><a class = Warn onclick=OpenPlugin('Aldec.BDE.7','0','C:/Users/liuzi/Desktop/2020f/345/project/pipelined/src/RISC.bde','','-errorid=24,361');>	'I_F' instance: 'index(6:0)' input bus pin and 'File_Input' input wire terminal</a></li>
+	<li ;text-align:left><a class = Warn onclick=OpenPlugin('Aldec.BDE.7','0','C:/Users/liuzi/Desktop/2020f/345/project/pipelined/src/RISC.bde','','-errorid=24,365');>	'I_F' instance: 'inst(24:0)' output bus pin and 'NET365' wire signal</a></li>
+	<li ;text-align:left><a class = Warn onclick=OpenPlugin('Aldec.BDE.7','0','C:/Users/liuzi/Desktop/2020f/345/project/pipelined/src/RISC.bde','','-errorid=24,361');>	'I_F' instance: 'inst_in(24:0)' input bus pin and 'File_Input' input wire terminal</a></li></ul></SPAN><BR>
+<SPAN class=Info1>
+	<p class = Warn1 style=font-weight:bold;margin-top:0px;margin-bottom:0px>Nets connected to multiple sources
+	</p><ul style=margin-left:30px;margin-top:0px;margin-bottom:0px>
+	<li ;text-align:left><a class = Warn onclick=OpenPlugin('Aldec.BDE.7','0','C:/Users/liuzi/Desktop/2020f/345/project/pipelined/src/RISC.bde','','-errorid=374,375');>	'NET373' wire signal</a></li></ul></SPAN><BR>
+<SPAN class=Warn1>RISC.bde - 0 error(s), 38 warning(s)</SPAN><BR>
+<SPAN class=Info1>DRC process completed in 1 second(s).</SPAN><BR>
+</tt>
+       
+        >
+</BODY>
+</HTML>

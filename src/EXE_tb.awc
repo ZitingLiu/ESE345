@@ -1,0 +1,61 @@
+<config>
+    <version>
+        3.1
+    </version>
+    <comment>
+    </comment>
+    <databases>
+        <database id="">*virtual*</database>
+        <database id="9cb6d061142345cdbe5ffa0ab2000d00">EXE_tb.asdb</database>
+    </databases>
+    <signallists>
+        <signallist id="0">
+        <signal>/exe_tb/clock</signal>
+        <signal>/exe_tb/mux1</signal>
+        <signal>/exe_tb/mux2</signal>
+        <signal>/exe_tb/mux3</signal>
+        <signal>/exe_tb/RdWrite</signal>
+        <signal>/exe_tb/forward</signal>
+        <signal>/exe_tb/rs1</signal>
+        <signal>/exe_tb/rs2</signal>
+        <signal>/exe_tb/rs3</signal>
+        <signal>/exe_tb/rd</signal>
+        <signal>/exe_tb/RdAddr</signal>
+        <signal>/exe_tb/Rs2Addr</signal>
+        <signal>/exe_tb/op_code</signal>
+        <signal>/exe_tb/imm</signal>
+        <signal>/exe_tb/index</signal>
+        <signal>/exe_tb/data_out</signal>
+        <signal>/exe_tb/wrAddr</signal>
+        <signal>/exe_tb/period_1</signal>
+        <signal>/exe_tb/period_2</signal>
+        </signallist>
+    </signallists>
+    <timebases>
+        <timebase id="0">
+            <time start_time="0" end_time="1044287" />
+        </timebase>
+    </timebases>
+    <prefbases>
+        <prefbase id="0" >
+        </prefbase>
+    </prefbases>
+    <bookmarkbases>
+        <bookmarks id="0">
+        </bookmarks>
+    </bookmarkbases>
+    <cursorbases>
+        <cursors id="0">
+            <cursor value="385260" label="Cursor 1" locked="0" />
+        </cursors>
+    </cursorbases>
+    <measurementbases>
+    </measurementbases>
+    <commentbases>
+        <comments id="0">
+        </comments>
+    </commentbases>
+    <views>
+        <view signallist="0" propertybase="0" prefbase="0" type="1" bookmarks="0" cursors="0" measurements="-1" comments="-1" />
+    </views>
+</config>
